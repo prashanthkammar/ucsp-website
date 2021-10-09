@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UCSP Research Group</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename= 'img/favicon.ico')}}" type="image/x-icon" />
+    <link rel="stylesheet" href="{{url_for('static', filename = 'bootstrap-4.1.3-dist/css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'fontawesome-free-5.1.0-web/css/all.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'fontawesome-free-5.1.0-web/css/brands.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--swiper cdn css and js-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  </head>
+
+  <body data-spy="scroll" data-target="#navbarResponsive" data-offset="50">
+    <!-- Start Home-->
+    <div id="home">
+      <!--navigation-->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand" href="#"><img src="{{url_for('static', filename= 'img/ucsp.png')}}" width="80" alt="UCSP"/></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="#home" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#about" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#mentor" class="nav-link">Mentors</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#collab" class="nav-link">Collaborations</a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a href="#ex-board" class="nav-link">Board</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#events" class="nav-link">Events</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a href="{{url_for('main.member')}}" class="nav-link"><i class="fas fa-user-plus"></i>&nbsp;Register</a>
+                </li> -->
+          </ul>
+        </div>
+      </nav>
+      <!--End nav-->
+
+      <!--landing-->
+      <div class="landing">
+        <div class="home-wrap">
+          <div class="home-inner">
+            
+          </div> 
+        </div>
+
+      </div>
+      <div class="caption text-center">
+        <h1>Welcome to UCSP</h1> 
+        <h3>UBIQUITOUS COMPUTING & SIGNAL PROCESSING<br>Research Group </h3>
+        <a href="{{url_for('main.member')}}" class="btn btn-outline-light btn-lg text-center">Join Us</a>
+      </div>
+
+      <!--End landing-->
+    </div>
+
+    <!--End home-->
+    <br><br><br>
+
+     <!--About-->
+     <div id="about" class="offset-spl">
+        <div class="col-12">
+          <h3 class="text-center second"><span>About</span></h3>
+        </div>
+        
+      <section class="About">
+        <div class="container">
+          <div class="card">
+            <div class="imgBx">
+              <img
+                src="{{url_for('static', filename= 'img/bulb.png')}}"
+                alt="vision"
+                style="width: 5 rem; height: 5rem;"
+              />
+            </div>
+            <div class="contentBx">
+              <h2>Vision</h2>
+              <p>
+                To build a research environment for inspiring minds and to embark intellectual circuit in the years to come.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imgBx">
+              <img
+                src="{{url_for('static', filename= 'img/rocket2.png')}}" 
+                alt="vision"
+                style="width: 5 rem; height: 5rem;"
+              />
+            </div>
+            <div class="contentBx">
+              <h2>Motto</h2>
+              <p>
+                To see what everyone has seen, but to think what nobody else has
+                thought to create a positive impact on the society
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imgBx">&nbsp;&nbsp;
+              <img
+                src="{{url_for('static', filename= 'img/goalY.png')}}"
+                alt="vision"
+                style="width: 5 rem; height: 5rem;"
+              />
+            </div>
+            <div class="contentBx">
+              <h2>Goal</h2>
+              <p>To create awareness and keen interest in today's trending
+              technologies and to orient the students and faculties alike to
+              undertake research in their selected areas of interest.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+        <div class="fixed-wrap">
+          <div class="fixed">
+          </div>
+        </div>
+      </div>
+      <br><br><br>  
+    </div>
+
+    <!--End about-->
+
+
+
+    <!--Founder, HOD, faculty-->
+    <div id="mentor" class="offset">
+        <div class="col-12">
+          <h3 class="text-center second"><span>Mentors</span></h3>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top cardimg" src="{{url_for('static',filename='img/Rohith2.jpg')}}" alt="Card image cap">
+              <div class="card-body">
+              <h5 class="card-title">Founder of UCSP: Rohith Prasanna</h5>
+              <p class="card-text">Machine Learning Engineer, <br>  EvaBot Inc.
+              San Francisco Bay Area, USA<br> Formerly: Assistant Professor, Dept. Of ECE, NIE, Mysuru <br>
+                For further details<br> <button class="btn btn-link" data-target="#rpsir" data-toggle="modal" style="text-decoration: none; ">click here</button></p>
+            </div>
+          </div>
+
+
+            <div class="card">
+              <img class="card-img-top cardimg" src="https://nie.ac.in/wp-content/uploads/2019/03/kaulgud.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">HOD: Dr. Narasimha Kaulgud</h5>
+                <p class="card-text">Head of the Department, <br> Department of Electronics & Communication Engineering, NIE, Mysuru <br> For further details<br> <a href="https://nie.ac.in/faculty/narasimha-kaulgud/" target="_blank" style="text-decoration: none;">click here</a></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="card-img-top cardimg" src="https://nie.ac.in/wp-content/uploads/2019/03/vijay-bt.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Faculty Co-ordinator: Dr. Vijay B T</h5>
+                <p class="card-text">
+                    Assistant Professor, <br>  Department of Electronics & Communication Engineering, NIE, Mysuru <br> For further details<br> <a href="https://nie.ac.in/faculty/dr-vijay-b-t/" style="text-decoration: none;">click here</a> </p>
+               
+            </div>
+            </div>
+          </div>  
+    </div>
+    <!--End faculty-->
+
+
+    <!--Collaboration part-->
+    <div id="collab" class="offset">
+      <div class="col-12">
+        <h3 class="text-center second"><span>Collaboration</span></h3>
+      </div>
+    <div class="wing card">
+      <div class="row1 ">
+        <div class="col-md-4">
+          <img src="{{url_for('static', filename= 'img/wing_logo.png')}}" class="wing-logo"  alt=""> <br> <br> <br> <br>
+        </div class="card-body">
+           <p class="wing-box"> WiNG: Wireless Inter Networking Group, VVCE,
+           Mysuru is a community where people work for the upliftment of
+           research in areas of networking. UCSP has signed a Research
+           Collaboration Agreement with WiNG through which we aim to broaden our
+           areas of work as well as connect with more people, building a healthy
+           and encouraging research environment.</p>
+      </div>
+
+    </div>
+    </div>
+
+    <!--End of Collaboration part-->
+
+
+    <!--Board-->
+        <div id="ex-board" class="offset">
+          <div class="jumbotron">
+            <div class="container"> 
+              <div class="col-12">
+                <h3 class="text-center second"><span>Executive Board</span></h3>
+              </div>
+              <!--row 1-->
+              <div class="row">
+                  <div class="col-md-3 board text-center">
+                    <div class="img-box" data-target="#sawan" data-toggle="modal">
+                      <img class="img-fluid" src="{{url_for('static', filename= 'img/sawan.jpeg')}}" alt="Sawan Somaiah B K">
+                    
+                    </div>
+                    <h2>Sawan Somaiah B K</h2>
+                    <h3>Student Chair</h3>
+                  </div>
+
+                  <div class="col-md-3 board text-center">
+                    <div class="img-box" data-target="#raksha" data-toggle="modal">
+                      <img class="img-fluid" src="{{url_for('static', filename='img/raksha.jpeg')}}" alt="Raksha S"> 
+                    </div>
+                    <h2>Raksha S</h2>
+                    <h3>Vice Student Chair</h3>
+                  </div>
+
+                  <div class="col-md-3 board text-center">
+                    <div class="img-box" data-target="#darshan" data-toggle="modal">
+                      <img class="img-fluid" src="{{url_for('static', filename= 'img/darshan.jpeg')}}" alt="Darshan S"> 
+                    </div>
+                    <h2>Darshan S</h2>
+                    <h3>Event Co-ordinator</h3>
+                  </div> 
+
+                  <div class="col-md-3 board text-center">
+                    <div class="img-box" data-target="#shubham" data-toggle="modal">
+                      <img class="img-fluid" src="{{url_for('static', filename= 'img/shub.jpeg')}}" alt="Shubham Khorvi"> 
+                    </div>
+                    <h2>Shubham Khorvi</h2>
+                    <h3>Project Co-ordinator</h3>
+                  </div>
+
+            </div>
+              <!--End row1-->
+
+              <!--Row 2-->
+              <div class="row">
+                <div class="col-md-3 board text-center">
+                  <div class="img-box" data-target="#prashanth" data-toggle="modal">
+                    <img class="img-fluid" src="{{url_for('static', filename= 'img/prashanth.jpeg')}}" alt="Prashant G K" >
+                  
+                  </div>
+                  <h2>Prashanth G K</h2>
+                  <h3>Technical Co-ordinator</h3>
+                </div>
+
+                <div class="col-md-3 board text-center">
+                  <div class="img-box" data-target="#vaishnavi" data-toggle="modal">
+                    <img class="img-fluid" src="{{url_for('static', filename= 'img/V.jpeg')}}" alt="Vaishnavi K N" > 
+                  </div>
+                  <h2>Vaishnavi K N</h2>
+                  <h3>Head, Marketing and Editorial</h3>
+                </div>
+
+                <div class="col-md-3 board text-center">
+                  <div class="img-box" data-target="#pran" data-toggle="modal">
+                    <img class="img-fluid" src="{{url_for('static', filename= 'img/Pran.jpg')}}" alt="Pran N Gowda" > 
+                  </div>
+                  <h2>Pran N Gowda</h2>
+                  <h3>Head, Design Committee </h3>
+                </div> 
+
+                <div class="col-md-3 board text-center">
+                  <div class="img-box" data-target="#spoorthy" data-toggle="modal">
+                    <img class="img-fluid" src="{{url_for('static', filename= 'img/spoorthy.jpg')}}" alt="spoorthy" > 
+                  </div>
+                  <h2>Spoorthy J</h2>
+                  <h3 class="treasurer">Treasurer and</h3>
+                  <h3>Head, Membership and Volunteering</h3>
+                </div>
+
+          </div>
+          <!--End row 2-->
+              
+              <!--Row 3-->
+              <div class="row">
+                <div class="col-md-3 board text-center">
+                  <div class="img-box" data-target="#surabhi" data-toggle="modal">
+                    <img class="img-fluid" src="{{url_for('static', filename= 'img/surabhi.jpeg')}}" alt="Surabhi R" >
+                  
+                  </div>
+                  <h2>Surabhi R</h2>
+                  <h3>Inter Group Associate</h3>
+                </div>
+
+                <div class="col-md-3 board text-center">
+                  <div class="img-box" data-target="#chetan" data-toggle="modal">
+                    <img class="img-fluid" src="{{url_for('static', filename= 'img/chetan.jpg')}}" alt="Surabhi R" >
+                  
+                  </div>
+                  <h2>Chetan Kalagi</h2>
+                  <h3>Industrial Co-ordinator</h3>
+                </div>
+
+
+           
+
+          </div>
+          <!--End row 3-->
+        
+            </div>
+             
+
+        </div>
+        </div>
+
+
+    <!--End board-->
+    
+  <!--Events-->
+
+   <div id="events" class="offset"> 
+   <h3 class="text-center second"><span>Events</span></h3>  
+   <!-- Swiper -->
+   <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="cardSet3 card">
+            <div class="card-body">
+              <img style="width: 100%;" class="img-fluid" src="{{url_for('static', filename= 'img/probability.jpeg')}}">
+              <h3 class="pt-2 pb-2 text-center card-title" style="font-size: 24px;">Concept of Probability in Communication</h3>
+              <p><b>Organized by:</b> UCSP</p>
+              <p><b>Venue:</b> Google Meet</p>
+              <p><b>Date:</b> 3/01/2021</p>
+              <button class="btn btn-link" data-target="#probability" data-toggle="modal" style="text-decoration: none; ">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="cardSet3 card">
+            <div class="card-body">
+              <img style="width: 100%;" class="img-fluid" src="{{url_for('static', filename= 'img/cryptography.jpeg')}}">
+              <h3 class="pt-2 pb-2 text-center card-title">Cryptography</h3>
+              <p><b>Organized by:</b> UCSP</p>
+              <p><b>Venue:</b> GoTo Webinar</p>
+              <p><b>Date:</b> 1/11/2020</p>
+              <button class="btn btn-link" data-target="#crypt" data-toggle="modal" style="text-decoration: none; ">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="cardSet3 card">
+            <div class="card-body">
+              <img style="width: 100%;" class="img-fluid" src="{{url_for('static', filename= 'img/imageprocessing.jpeg')}}" alt="event1">
+              <h3 class="pt-2 pb-2 text-center card-title">Image Processing</h3>
+              <p><b>Organized by:</b> UCSP</p>
+              <p><b>Venue:</b> GoTo Webinar</p>
+              <p><b>Date:</b> 3/10/2020</p>
+              <button class="btn btn-link" data-target="#ip" data-toggle="modal" style="text-decoration: none; ">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="cardSet3 card">
+            <div class="card-body">
+              <img style="width: 100%;" class="img-fluid" src="{{url_for('static', filename= 'img/lds.jpg')}}" alt="event1">
+              <h3 class="pt-2 pb-2 text-center card-title">Lockdown Saga</h3>
+              <p><b>Organized by:</b> UCSP</p>
+              <p><b>Venue:</b> Online Platform</p>
+              <p><b>Date:</b> 21/06/2020</p>
+              <button class="btn btn-link" data-target="#lds" data-toggle="modal" style="text-decoration: none; ">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="cardSet3 card">
+            <div class="card-body">
+              <img style="width: 100%;" class="img-fluid" src="{{url_for('static', filename= 'img/cn.jpeg')}}" alt="event1">
+              <h3 class="pt-2 pb-2 text-center card-title" style="font-size: 21px;">Computer Networking Webinar</h3>
+              <p><b>Organized by:</b> UCSP</p>
+              <p><b>Venue:</b> GoTo Webinar</p>
+              <p><b>Date:</b> 26/04/2020</p>
+              <button class="btn btn-link" data-target="#cn" data-toggle="modal" style="text-decoration: none; ">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="cardSet3 card">
+            <div class="card-body">
+              <img style="width: 100%;" class="img-fluid" src="{{url_for('static', filename= 'img/codezilla.jpeg')}}" alt="event1">
+              <h3 class="pt-2 pb-2 text-center card-title">Codezilla</h3>
+              <p><b>Organized by:</b> UCSP</p>
+              <p><b>Venue:</b> Programming lab, NRN Block</p>
+              <p><b>Date:</b> 29/02/2020</p>
+              <button class="btn btn-link" data-target="#codezilla" data-toggle="modal" style="text-decoration: none; ">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="cardSet3 card">
+            <div class="card-body">
+              <img style="width: 100%;" class="img-fluid" src="{{url_for('static', filename= 'img/gitwit.jpeg')}}" alt="event1">
+              <h3 class="pt-2 pb-2 text-center card-title">Git Wit</h3>
+              <p><b>Organized by:</b> UCSP</p>
+              <p><b>Venue:</b> Room no. 411, NRN Block</p>
+              <p><b>Date:</b> 07/11/2019</p>
+              <button class="btn btn-link" data-target="#git" data-toggle="modal" style="text-decoration: none; ">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="cardSet3 card">
+            <div class="card-body">
+              <img style="width: 100%;" class="img-fluid" src="{{url_for('static', filename= 'img/technocazar.jpeg')}}" alt="event1">
+              <h3 class="pt-2 pb-2 text-center card-title">Technocazar</h3>
+              <p><b>Organized by:</b> UCSP</p>
+              <p><b>Venue:</b> GJB, NIE</p>
+              <p><b>Date:</b> 04/10/2019</p>
+              <button class="btn btn-link" data-target="#technocazar" data-toggle="modal" style="text-decoration: none; ">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="cardSet3 card">
+            <div class="card-body">
+              <img style="width: 100%;" class="img-fluid" src="{{url_for('static', filename= 'img/ml.jpeg')}}" alt="event1">
+              <h3 class="pt-2 pb-2 text-center card-title">Workshop on ML</h3>
+              <p><b>Organized by:</b> UCSP</p>
+              <p><b>Venue:</b> Programming lab, NRN Block</p>
+              <p><b>Date:</b> 17/08/2019 and 18/08/2019</p>
+              <button class="btn btn-link" data-target="#ml" data-toggle="modal" style="text-decoration: none; ">Know More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="cardSet3 card">
+            <div class="card-body">
+              <img style="width: 100%;" class="img-fluid" src="{{url_for('static', filename= 'img/paperwriting.jpeg')}}" alt="event1">
+              <h3 class="pt-2 pb-2 text-center card-title" style="font-size: 25px;">Technical Paper Writing</h3>
+              <p><b>Organized by:</b> UCSP</p>
+              <p><b>Venue:</b> MV Hall, GJB, NIE</p>
+              <p><b>Date:</b> 21/06/2020</p>
+              <button class="btn btn-link" data-target="#paper" data-toggle="modal" style="text-decoration: none; ">Know More</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+      
+      <br> <br> <br>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+     
+   </div>
+   </div>
+  <!--End events-->
+
+
+    <!--Blog-->
+      
+    <div id="blog" class="offset"> <br> <br><br>
+      <section>
+      <div class="blog-post">
+        <div class="blog-post_img">
+          <img
+            src="{{url_for('static', filename= 'img/lib.jpeg')}}"
+            alt=""
+          />
+        </div>
+        <div class="blog-post_info">
+          <h1 class="blog-post_title">Blog</h1> 
+          <p class="blog-post_text">UCSP is a unique and innovative initiative
+          from the department of ECE, NIE to bring research to UG students in a
+          revolutionary way. Aiming at achieving this, here we introduce the
+          blog. The main focus of this will be exploring new domains,
+          encouraging technical writing as well as information exchange. This
+          platform can be used if you need clarifications regarding any
+          technical concept,  if you want to share any new idea or if you have
+          any suggestions/doubts related to our events or projects. We hope you
+          make the best of it. Happy reading!
+          </p>
+          <div class="text-right">
+          <a href="{{ url_for('main.home')}}" class="blog-post_cta" >Blog</a></div>
+        </div>
+      </div>
+    </section>
+    </div>
+    <!--End blog-->
+
+
+
+<!--Footer-->
+<footer>
+  <div class="container-fluid padding">
+      <div class="row text-center">
+          <div class="col-md-4">
+            <hr class="light" >
+            <img src="{{url_for('static',filename= 'img/ucsp.png')}}" style="width: 100px;" alt="">
+              <hr class="light">
+              <p>UCSP is a multidisciplinary</p>
+              <p>research group actively conducting events</p>
+              <p>and mentoring research projects</p>
+          </div>
+          <div class="col-md-4"> 
+            <hr class="light">
+              <h5>Group Info</h5> <br> 
+              <hr class="light">
+              <p>Dept. of ECE, NRN Block</p>
+              <p>THE NATIONAL INSTITUTE OF ENGINEERING</p>
+              <p>Mananthvady Road</p>
+              <p>Mysuru - 570008</p>
+              <p>Karnataka</p>
+          </div>
+          <div class="col-md-4">
+              <hr class="light">
+              <h5>Contact Info</h5> <br>
+              <hr class="light-100">
+              <p>Spoorthy J</p>
+              <p><a href="tel:7026763209">+91 7026763209</a></p>
+              <p><a href="mailto:ucsp.nie@gmail.com"> ucsp.nie@gmail.com </a></p>
+              <a href="https://www.facebook.com/UCSP-Research-Group-NIE-714828498724270/" target="_blank"><i
+                class="fa fa-facebook-square"></i></a>&nbsp;
+            <a href="https://twitter.com/UCSP_NIE" target="_blank"><i class="fa fa-twitter-square"></i></a>&nbsp;
+            <a href="https://www.instagram.com/ucsp_research_group_nie/" target="_blank"><i
+                class="fa fa-instagram"></i></a>&nbsp;
+            <a href="https://www.linkedin.com/company/ucsp" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </div>
+
+          <div class="col-12">
+              <hr class="light">
+              <h5>&copy; UCSP</h5>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+<!--Modal-->
+
+    <div id="rpsir" class="modal fade">
+      <div class="modal-dialog modal-md">
+        <div class="member_modal modal-content">
+          <button style="outline: none; text-decoration: none; position: relative; top: 1px; left: 46%;"
+            class="close" data-dismiss="modal">&times;</button>
+          <!-- <p style="text-align: center;"><img width="150" height="150" style="border-radius: 50%;"
+              src="https://cdn.pixabay.com/photo/2020/07/14/22/10/woman-5405866_960_720.jpg" alt="sawan"></p> -->
+          <h4 class="text-center">Rohith Prasanna</h4>
+          <h6 class="text-center text-muted">Founder of UCSP</h6>
+          <div class="modal-body">
+            <p style="font-size: 1.1rem;" class="text-center lead">                              
+              Hello! My name is Rohith Prasanna and I'm delighted to welcome you
+              to this group! I currently work as Machine Learning Engineer at
+              EvaBot Inc. San Francisco Bay Area, USA (Formerly: Assistant
+              Professor, Dept. Of ECE, NIE, Mysore). My specialization is in the
+              domain of Computer Networks and Computer Architecture with the key
+              areas of research being in the fields of Ubiquitous Computing and
+              Pervasive Systems. Furthermore, my lifemantra is a teaspoon of
+              hardwork, a dash of determination with a sprinkle of dedication
+              which adds up to the formula for success. I look forward to
+              inspire interest in research, provide insights and highlights of
+              the happening in science and technology and in the process,
+              creating awareness and interest in the same through this group.
+              </p>
+              <ul>
+              <a href="#">
+                <li><i class="fa fa-facebook"></i></li>
+              </a>
+              <a href="#">
+                <li><i class="fa fa-instagram"></i></li>
+              </a>
+              <a href="#">
+                <li><i class="fa fa-linkedin"></i></li>
+              </a>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!--Probability in Communication event-->
+        <div id="probability" class="modal fade">
+          <div class="modal-dialog modal-md">
+            <div style="padding: 34px 10px;" class="modal-content">
+              <button style="outline: none; text-decoration: none; position: relative; top: -24px; left: 46%;"
+                class="close" data-dismiss="modal">&times;</button>
+              <h4 class="text-center">Concept of Probability in Communication</h4>
+              <div class="modal-body">
+                <p style="font-size: 1.1rem;" class="text-center lead">A
+                workshop on 'Concept of Probability in Communication', covering
+                major concepts of the domain, was held on 3rd of January 2021,
+                Sunday from 10AM to 12PM. The event started from the basics of
+                probability. Correlating to topics taught on probability, their
+                usage and application in the field of wireless and wired
+                communication was discussed. This was followed by a Q/A session
+                where the doubts were cleared,  there by marking the end of the
+                workshop.<br>
+                <span><b>Resource person</b>: Dr. Sanjeev G, Professor, Department of ECE, PES University.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Cryptography event-->
+        <div id="crypt" class="modal fade">
+          <div class="modal-dialog modal-md">
+            <div style="padding: 34px 10px;" class="modal-content">
+              <button style="outline: none; text-decoration: none; position: relative; top: -24px; left: 46%;"
+                class="close" data-dismiss="modal">&times;</button>
+              <h4 class="text-center">Cryptography in Projects</h4>
+              <div class="modal-body">
+                <p style="font-size: 1.1rem;" class="text-center
+                lead">'Cryptography in Projects'  was a two session event
+                covering both theory as well as its applications in the field.
+                The first session included introduction to cryptography,
+                vulnerabilities and attacks on wired and wireless networks,
+                TCP/IP model, security goals, services and mechanisms, Euclidian
+                algorithm, process of GCP, ciphers and several related topics.
+                In the second session, two projects were displayed. One of them
+                was using a project on RSA algorithm using python programming
+                language. Other was encryption and decryption using Hill Cipher
+                algorithm. Overall, this event gave a head start to students who
+                are interested in the field by covering the prerequisites.<br>
+                <span><b>Resource person</b>: Anand Srivatsa, Head of SDSC and Assistant Professor, Department of ECE, NIE Mysuru.</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!--Image processing event-->
+    <div id="ip" class="modal fade">
+      <div class="modal-dialog modal-md">
+        <div style="padding: 34px 10px;" class="modal-content">
+          <button style="outline: none; text-decoration: none; position: relative; top: -24px; left: 46%;"
+            class="close" data-dismiss="modal">&times;</button>
+          <h4 class="text-center">Image Processing</h4>
+          <div class="modal-body">
+            <p style="font-size: 1.1rem;" class="text-center lead"> "Image
+            processing and its applications" was an event organised to give an
+            overview of the entire subject. Starting from the basics of the
+            subject, major areas of research in Image processing, such as
+            Biomedical image processing, ML in Image processing, steganography
+            and many more fields were covered. In the end, insights on
+            projects for UG students were also given.<br>
+            <span><b>Resource person</b>: Dr. Nagaraju C, Assistant Professor, Department of ECE, NIE Mysuru.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!--Lockdown saga-->
+    <div id="lds" class="modal fade">
+      <div class="modal-dialog modal-md">
+        <div style="padding: 34px 10px;" class="modal-content">
+          <button style="outline: none; text-decoration: none; position: relative; top: -24px; left: 46%;"
+            class="close" data-dismiss="modal">&times;</button>
+          <h4 class="text-center">Lockdown Saga</h4>
+          <div class="modal-body">
+            <p style="font-size: 1.1rem;" class="text-center lead"> This was an
+            elaborate technofun event which  consisted of four rounds.  The
+            first one was a brain teaser in which you had to make wise choices
+            to reach the end of the story. The second round had image based
+            puzzles. The next one was a virtual treasure hunt and the last round
+            was a quiz including general aptitude related questions. This fun
+            and learn event was entirely designed and built by the core team of
+            UCSP.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!--Computer Networking Webinar-->
+      <div id="cn" class="modal fade">
+        <div class="modal-dialog modal-md">
+          <div style="padding: 34px 10px;" class="modal-content">
+            <button style="outline: none; text-decoration: none; position: relative; top: -24px; left: 46%;"
+              class="close" data-dismiss="modal">&times;</button>
+            <h4 class="text-center">Computer Networking Webinar</h4>
+            <div class="modal-body">
+              <p style="font-size: 1.1rem;" class="text-center lead"> Computer
+              Networking being one such subject which is very important as well
+              as in current trends, a session on this was organised. The topics
+              covered ranged from basics of the subject to some core concepts as
+              well as research related topics. <br>
+              <span><b>Resource person</b>: Dr. Gururaj H L, Associate Professor, Department of CSE, VVCE Mysuru.</span></p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Codezilla-->
+      <div id="codezilla" class="modal fade">
+        <div class="modal-dialog modal-md">
+          <div style="padding: 34px 10px;" class="modal-content">
+            <button style="outline: none; text-decoration: none; position: relative; top: -24px; left: 46%;"
+              class="close" data-dismiss="modal">&times;</button>
+            <h4 class="text-center">Codezilla</h4>
+            <div class="modal-body">
+              <p style="font-size: 1.1rem;" class="text-center lead"> This was a
+              technical event which included a three hour rigorous coding
+              competition in which the participants had to code solutions to the
+              given problems. The language for coding was left to their
+              choice.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Git Wit-->
+      <div id="git" class="modal fade">
+        <div class="modal-dialog modal-md">
+          <div style="padding: 34px 10px;" class="modal-content">
+            <button style="outline: none; text-decoration: none; position: relative; top: -24px; left: 46%;"
+              class="close" data-dismiss="modal">&times;</button>
+            <h4 class="text-center">Git Wit</h4>
+            <div class="modal-body">
+              <p style="font-size: 1.1rem;" class="text-center lead">
+              Considering how useful Git and Git hub are to an engineering
+              student, a workshop was organised to introduce the participants to
+              the fundamentals of Git and Git hub, how to create an account,
+              upload a code, make changes in an already uploaded code and more.
+              This was conducted in collaboration with the Microsoft Student
+              Partner Ashwin G G. <br>
+              <span><b>Resource Person</b>: Shivaprasad S, 4th year ECE. </span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Technocazar-->
+      <div id="technocazar" class="modal fade">
+        <div class="modal-dialog modal-md">
+          <div style="padding: 34px 10px;" class="modal-content">
+            <button style="outline: none; text-decoration: none; position: relative; top: -24px; left: 46%;"
+              class="close" data-dismiss="modal">&times;</button>
+            <h4 class="text-center">Technocazar</h4>
+            <div class="modal-body">
+              <p style="font-size: 1.1rem;" class="text-center lead">
+                A technofun event in the form of treasure hunt where each team
+                had to answer several questions on general aptitude, digital
+                logic and concepts studied till first year of engineering in
+                order to reach the treasure. It was conducted mainly to bridge
+                the gap between academics and practical applications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+         <!--Machine Learning Workship-->
+         <div id="ml" class="modal fade">
+          <div class="modal-dialog modal-md">
+            <div style="padding: 34px 10px;" class="modal-content">
+              <button style="outline: none; text-decoration: none; position: relative; top: -24px; left: 46%;"
+                class="close" data-dismiss="modal">&times;</button>
+              <h4 class="text-center">Machine Learning Workship</h4>
+              <div class="modal-body">
+                <p style="font-size: 1.1rem;" class="text-center lead">
+                  A two day workshop was conducted on Machine Learning which
+                  included basics of python, some libraries on python useful for
+                  developing machine learning projects, basics of machine
+                  learning and how to work on tensorflow. With the basics taught
+                  on the first day, a project on Digit Recognition was built on
+                  the second day. <br>
+                  <span><b>Resource Person</b>: Yashwanth R and Adarsh Srivatsa, 4th year ECE.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!--Technical Paper Writing Session-->
+      <div id="paper" class="modal fade">
+        <div class="modal-dialog modal-md">
+          <div style="padding: 34px 10px;" class="modal-content">
+            <button style="outline: none; text-decoration: none; position: relative; top: -24px; left: 46%;"
+              class="close" data-dismiss="modal">&times;</button>
+            <h4 class="text-center">Technical Paper Writing Session</h4>
+            <div class="modal-body">
+              <p style="font-size: 1.1rem;" class="text-center lead">
+                The main focus of our group is to introduce research to UG
+                students. One way of doing this is through technical paper
+                writing and hence, this session. It helped students understand
+                what a technical paper is, types of papers, paper templates,
+                methods of writing as well as its importance. It also gave them
+                an idea of how to present a technical paper on various
+                platforms.<br>
+              <span><b>Resource Person</b>: Dr. Roopa K, Associate Professor, Dept of ECE, NIE.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Sawan-->
+      <div id="sawan" class="modal fade">
+        <div class="modal-dialog modal-md">
+          <div class="member_modal modal-content">
+            <button style="outline: none; text-decoration: none; position: relative; top: 1px; left: 46%;"
+              class="close" data-dismiss="modal">&times;</button>
+            <!-- <p style="text-align: center;"><img width="150" height="150" style="border-radius: 50%;"
+                src="images//WhatsApp Image 2020-08-10 at 5.08.23 PM.jpeg" alt="sawan"></p> -->
+            <h4 class="text-center">Sawan Somaiah B K</h4>
+            <h6 class="text-center text-muted">Student Chair</h6>
+            <div class="modal-body">
+              <p style="font-size: 1.1rem;" class="text-center lead">
+                Hi ! I am Sawan Somaiah B K, a final year Electronics &
+                Communication student at NIE. I have been with team UCSP since
+                my first year. I started my journey here as a Student
+                Co-ordinator for ECE and a member of the Design team in my first
+                year. I was assigned the post of Social media head in my second
+                year. Later, in my pre final year, I was made the Membership and
+                Volunteering team head . This experience with the group for
+                three years helped me understand the core structure of the team.
+                I realised it wasn't just about my contribution to the team,
+                but, it was about getting the entire team to work together and
+                support each other to bring out the best for the team. I stand
+                with the idea "We stand together, we build each other".</p>
+               <ul>
+                <a href="#">
+                  <li><i class="fa fa-facebook"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-instagram"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-linkedin"></i></li>
+                </a>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Raksha-->
+      <div id="raksha" class="modal fade">
+        <div class="modal-dialog modal-md">
+          <div class="member_modal modal-content">
+            <button style="outline: none; text-decoration: none; position: relative; top: 1px; left: 46%;"
+              class="close" data-dismiss="modal">&times;</button>
+            <!-- <p style="text-align: center;"><img width="150" height="150" style="border-radius: 50%;"
+                src="https://cdn.pixabay.com/photo/2020/07/14/22/10/woman-5405866_960_720.jpg" alt="sawan"></p> -->
+            <h4 class="text-center">Raksha S</h4>
+            <h6 class="text-center text-muted">Vice Student Chair</h6>
+            <div class="modal-body">
+              <p style="font-size: 1.1rem;" class="text-center lead">
+                Hey guys!!!! I am Raksha S from dept.of ECE , NIE, currently in
+                4th year. My journey in UCSP took off through being a volunteer.
+                Then, I was elected as the Treasurer and Secretary. This has
+                left me with great experience of working and has also helped me
+                learn a lot. Finance, Digital electronics, IoT and Nano
+                technology are the topics that interest me. I hope to grow more
+                as a researcher through this journey as well as gain knowledge
+                and experience.</p>
+                <ul>
+                <a href="#">
+                  <li><i class="fa fa-facebook"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-instagram"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-linkedin"></i></li>
+                </a>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="darshan" class="modal fade">
+        <div class="modal-dialog modal-md">
+          <div class="member_modal modal-content">
+            <button style="outline: none; text-decoration: none; position: relative; top: 1px; left: 46%;"
+              class="close" data-dismiss="modal">&times;</button>
+            <!-- <p style="text-align: center;"><img width="150" height="150" style="border-radius: 50%;"
+                src="https://cdn.pixabay.com/photo/2020/07/14/22/10/woman-5405866_960_720.jpg" alt="sawan"></p> -->
+            <h4 class="text-center">Darshan S</h4>
+            <h6 class="text-center text-muted">Event Co-ordinator</h6>
+            <div class="modal-body">
+              <p style="font-size: 1.1rem;" class="text-center lead">
+                Hi there! I am Darshan, an articulate. My job is to manage,
+                develop and execute creative events that represent the 'Techno
+                Brand✓'. I'm with ability to perform under time constraints and
+                meet strict deadlines.
+              </p>
+                <ul>
+                <a href="#">
+                  <li><i class="fa fa-facebook"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-instagram"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-linkedin"></i></li>
+                </a>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <!--Shubham-->
+      <div id="shubham" class="modal fade">
+        <div class="modal-dialog modal-md">
+          <div class="member_modal modal-content">
+            <button style="outline: none; text-decoration: none; position: relative; top: 1px; left: 46%;"
+              class="close" data-dismiss="modal">&times;</button>
+            <!-- <p style="text-align: center;"><img width="150" height="150" style="border-radius: 50%;"
+                src="https://cdn.pixabay.com/photo/2020/07/14/22/10/woman-5405866_960_720.jpg" alt="sawan"></p> -->
+            <h4 class="text-center">Shubham Khorvi</h4>
+            <h6 class="text-center text-muted">Project Co-ordinator</h6>
+            <div class="modal-body">
+              <p style="font-size: 1.1rem;" class="text-center lead">
+                Namaste! I'm Shubham, final year at NIE. My job is to help you
+                with projects. Being given an opportunity where I get to listen
+                to all the amazing ideas an engineering mind can think of is
+                exhilarating. Planning makes things better. So if you have an
+                idea, let's plan it together.
+              </p>
+                <ul>
+                <a href="#">
+                  <li><i class="fa fa-facebook"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-instagram"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-linkedin"></i></li>
+                </a>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Prashanth-->
+      <div id="prashanth" class="modal fade">
+        <div class="modal-dialog modal-md">
+          <div class="member_modal modal-content">
+            <button style="outline: none; text-decoration: none; position: relative; top: 1px; left: 46%;"
+              class="close" data-dismiss="modal">&times;</button>
+            <!-- <p style="text-align: center;"><img width="150" height="150" style="border-radius: 50%;"
+                src="https://cdn.pixabay.com/photo/2020/07/14/22/10/woman-5405866_960_720.jpg" alt="sawan"></p> -->
+            <h4 class="text-center">Prashanth G K</h4>
+            <h6 class="text-center text-muted">Technical Co-ordinator</h6>
+            <div class="modal-body">
+              <p style="font-size: 1.1rem;" class="text-center lead">                              
+                Hi! I'm Prashanth, final year student at NIE. Being a
+                technophile with curiosity and eagerness to venture into new
+                technologies, I joined team UCSP last year to learn about the
+                technical aspects of various things and contribute to the group.
+                I'm always dedicated towards my work and do it with honesty. As a
+                Technical Co-ordinator, along with my team, we explore technical
+                ideas and implement them for the progress of the group.
+              </p>
+                <ul>
+                <a href="#">
+                  <li><i class="fa fa-facebook"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-instagram"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-linkedin"></i></li>
+                </a>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Vaishanvi-->
+      <div id="vaishnavi" class="modal fade">
+        <div class="modal-dialog modal-md">
+          <div class="member_modal modal-content">
+            <button style="outline: none; text-decoration: none; position: relative; top: 1px; left: 46%;"
+              class="close" data-dismiss="modal">&times;</button>
+            <!-- <p style="text-align: center;"><img width="150" height="150" style="border-radius: 50%;"
+                src="https://cdn.pixabay.com/photo/2020/07/14/22/10/woman-5405866_960_720.jpg" alt="sawan"></p> -->
+            <h4 class="text-center">Vaishnavi K N</h4>
+            <h6 class="text-center text-muted">Head, Marketing and Editorial</h6>
+            <div class="modal-body">
+              <p style="font-size: 1.1rem;" class="text-center lead">                              
+                Greetings! With the idea of reaching out to
+                people and conveying our ideas through words, I, Vaishnavi K N,
+                have joined team UCSP as the Editorial and Marketing Committee
+                head. Working on technical writing and content creation is my job
+                along with publicising the main aim of our team and about our
+                activities.
+              </p>
+                <ul>
+                <a href="#">
+                  <li><i class="fa fa-facebook"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-instagram"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-linkedin"></i></li>
+                </a>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--Pran-->
+      <div id="pran" class="modal fade">
+        <div class="modal-dialog modal-md">
+          <div class="member_modal modal-content">
+            <button style="outline: none; text-decoration: none; position: relative; top: 1px; left: 46%;"
+              class="close" data-dismiss="modal">&times;</button>
+            <!-- <p style="text-align: center;"><img width="150" height="150" style="border-radius: 50%;"
+                src="https://cdn.pixabay.com/photo/2020/07/14/22/10/woman-5405866_960_720.jpg" alt="sawan"></p> -->
+            <h4 class="text-center">Pran N Gowda</h4>
+            <h6 class="text-center text-muted">Head, Design Committee </h6>
+            <div class="modal-body">
+              <p style="font-size: 1.1rem;" class="text-center lead">                              
+                Hello everyone !! I am Pran, final year student at NIE. An
+                engineering life in bits and bytes: joined UCSP in my 1 year,
+                currently serving as Design Committee head. This 3 year journey
+                with team UCSP has taught me valuable lessons of my engineering
+                life.
+              </p>
+                <ul>
+                <a href="#">
+                  <li><i class="fa fa-facebook"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-instagram"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-linkedin"></i></li>
+                </a>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--spoorthy-->
+      <div id="spoorthy" class="modal fade">
+        <div class="modal-dialog modal-md">
+          <div class="member_modal modal-content">
+            <button style="outline: none; text-decoration: none; position: relative; top: 1px; left: 46%;"
+              class="close" data-dismiss="modal">&times;</button>
+            <!-- <p style="text-align: center;"><img width="150" height="150" style="border-radius: 50%;"
+                src="https://cdn.pixabay.com/photo/2020/07/14/22/10/woman-5405866_960_720.jpg" alt="sawan"></p> -->
+            <h4 class="text-center">Spoorthy J</h4>
+            <h6 class="text-center text-muted">Treasurer and<br>Head, Membership and Volunteering</h6>
+            <div class="modal-body">
+              <p style="font-size: 1.1rem;" class="text-center lead">                              
+                Hello! I'm Spoorthy, 3rd year ECE. I started volunteering for
+                UCSP from my 2nd semester. Later, elected as General Secretary
+                and now serving as Treasurer and Head, Membership and
+                Volunteering. I believe “Learning is creation, not consumption. Knowledge is not something a learner absorbs, but something a learner creates.”.
+              </p>
+                <ul>
+                <a href="#">
+                  <li><i class="fa fa-facebook"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-instagram"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-linkedin"></i></li>
+                </a>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Surabhi-->
+      <div id="surabhi" class="modal fade">
+        <div class="modal-dialog modal-md">
+          <div class="member_modal modal-content">
+            <button style="outline: none; text-decoration: none; position: relative; top: 1px; left: 46%;"
+              class="close" data-dismiss="modal">&times;</button>
+            <!-- <p style="text-align: center;"><img width="150" height="150" style="border-radius: 50%;"
+                src="https://cdn.pixabay.com/photo/2020/07/14/22/10/woman-5405866_960_720.jpg" alt="sawan"></p> -->
+            <h4 class="text-center">Surabhi R</h4>
+            <h6 class="text-center text-muted">Inter Group Associate</h6>
+            <div class="modal-body">
+              <p style="font-size: 1.1rem;" class="text-center lead">                              
+                Hey there..! This is Surabhi R, an adroit and a workaholic
+                electronics enthusiast. Currently, I am a final year student at
+                NIE. I believe in the notion "Dedication and hard work can make
+                anything possible". I'm serving at UCSP as Inter Group
+                Associate. My role here deals with collaboration and
+                communication between similar groups of other colleges. As a
+                part of team UCSP, I'll do my best to take it to a greater
+                heights.</p>
+                <ul>
+                <a href="#">
+                  <li><i class="fa fa-facebook"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-instagram"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-linkedin"></i></li>
+                </a>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Chetan-->
+      <div id="chetan" class="modal fade">
+        <div class="modal-dialog modal-md">
+          <div class="member_modal modal-content">
+            <button style="outline: none; text-decoration: none; position: relative; top: 1px; left: 46%;"
+              class="close" data-dismiss="modal">&times;</button>
+            <!-- <p style="text-align: center;"><img width="150" height="150" style="border-radius: 50%;"
+                src="https://cdn.pixabay.com/photo/2020/07/14/22/10/woman-5405866_960_720.jpg" alt="sawan"></p> -->
+            <h4 class="text-center">Chetan Kalagi,</h4>
+            <h6 class="text-center text-muted">Industrial Co-ordinator</h6>
+            <div class="modal-body">
+              <p style="font-size: 1.1rem;" class="text-center lead">                              
+                Hello ! I am Chetan Kalagi, a final year ECE student at NIE. I
+                joined UCSP last year as a volunteer in marketing team. My
+                experience with the team has been amazing. My role in here as an
+                Industrial Co-ordinator is to handle Industrial collaborations of
+                UCSP.</p>
+                <ul>
+                <a href="#">
+                  <li><i class="fa fa-facebook"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-instagram"></i></li>
+                </a>
+                <a href="#">
+                  <li><i class="fa fa-linkedin"></i></li>
+                </a>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+        
+  <!--Scripts-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+   <!-- Initialize Swiper -->
+   <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      keyboard: {
+        enabled: true,
+      },
+      breakpoints: {
+        0: { /* when window >=0px - webflow mobile landscape/portriat */
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        767: { /* when window >= 767px - webflow tablet */
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        988: { /* when window >= 988px - webflow desktop */
+          slidesPerView: 4,
+          spaceBetween: 40,
+        }
+      },
+    /* uncomment if you want autoplay slider  
+    */
+      autoplay: {
+        delay: 3000,
+      },
+    /* uncomment if you want scrollbar
+     scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
+      },
+    */
+    });
+  </script>
+  <script>
+      $('.navbar-collapse a').click(function(){
+            $(".navbar-collapse").collapse('hide');
+        });
+  </script>
+<!-- <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbza4Lx4a1AO9Ea48C57OoqTGYq2Asqf0ipYG0R5-N8cLj2Fwpc/exec'
+  const form = document.forms['Reg']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    var response_message = document.getElementById("response_message");
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+      .then((html) => {
+      alert('Your registration was successfull')
+      
+    })
+    .then(document.getElementById("Reg").reset())
+  })
+</script> -->
+
+  </body>
+</html>
